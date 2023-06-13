@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: statusquarkusio-iykb
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/pkumari_org/e2e-demos-bvof-tenant/status-quarkus-io/statusquarkusio-iykb@sha256:3eddb10601b3057f7856202fe406c0d03c6ddd0f63a03f1a571dd0ebd1573e07
+        name: my-java-quarkus
+        resources: {}
+status: {}
